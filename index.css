@@ -63,7 +63,7 @@ body {
 }
 
 .content-wrapper { 
-    width:70%;
+    width:80%;
     margin: 0 auto;
 }
 
@@ -102,6 +102,13 @@ img {
     border-radius:30px;
 }
 
+.flex-row {
+    display:flex;
+    flex-flow:row wrap;
+}
+.flex-row-items{
+    background-color:#aaa;
+}
 .red-button {
     border-radius:10px;
     padding:1rem;
@@ -126,6 +133,7 @@ img {
 .contact-card {
     background-color:palegreen;
     background-size:100%;
+    background-repeat:no-repeat;
     border:1px solid #d5d5d5;
     border-radius:25px;
     height:35rem;
@@ -165,4 +173,11 @@ img {
 }
 .suzanne {
     background-image:url("img/team-Suzanne-Cabral.png");
+}
+
+
+@media (max-width:600px) {
+    body {
+        background-color:palegreen;
+    }
 }
