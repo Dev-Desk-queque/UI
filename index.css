@@ -75,18 +75,24 @@ h1{
     font-size:7rem;
     margin: 4.5rem 0 1.5rem 0;
     font-family: 'Frank Ruhl Libre', 'Times New Roman', serif;
+    color:black;
 }
 
 h2{
     font-size:4.5rem;
     font-family: 'Frank Ruhl Libre', 'Times New Roman', serif;
     margin: 0 0 1.5rem 0;
+    color:black;
 }
-
+h3{
+    font-family:'Frank Ruhl Libre', 'Times New Roman', Serif;
+    font-size:2.5rem; 
+}
 a{
     font-weight:bold;
-    color:#f8f9fa;
+    color:black;
 }
+
 p{
     line-height:1.2rem;
     margin:0 0 2.5rem 0;
@@ -96,13 +102,11 @@ img {
     border-radius:30px;
 }
 
-.button {
+.red-button {
     border-radius:10px;
     padding:1rem;
-}
-
-.red-bg {
     background-color:#ec3944;
+    color:white;
 }
 
 .red-underline {
@@ -111,4 +115,54 @@ img {
     background-repeat:no-repeat;
     background-position:bottom;
     color:#ec3944;
+}
+/* =================== */
+/* Team */
+/* =================== */
+.contacts-wrapper {
+    display:flex;
+    flex-flow:row wrap;
+}
+.contact-card {
+    background-color:palegreen;
+    background-size:100%;
+    border:1px solid #d5d5d5;
+    border-radius:25px;
+    height:35rem;
+    width:35rem;
+    margin:1rem;
+    overflow:hidden;
+    display:flex;
+    align-items:flex-end;
+}
+
+
+.contact-card-text{
+    background-color:#f8f9fa;
+    width:100%;
+    
+}
+.contact-card h3 {
+   padding:2rem 0 .5rem 0;
+}
+.contact-card p {
+    color:#777;
+    padding-bottom:1.5rem;
+}
+
+
+.emily {
+    background-image:url("img/team-Emily-Adams.jpg");
+}
+.devin {
+    background-image:url("img/team-Devin-Bidwell.jpg");
+}
+.brian {
+    background-image:url("img/team-Brian-Griffiths.png");
+}
+.juan {
+    background-image:url("img/team-Juan-Aleman.jpg");
+}
+.suzanne {
+    background-image:url("img/team-Suzanne-Cabral.png");
 }
