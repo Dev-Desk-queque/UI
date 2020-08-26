@@ -24,9 +24,16 @@ Goal: Match the Lambda Training Kit
 - ![#343a40](https://via.placeholder.com/15/343a40/000000?text=+) `#343a40(Dark Text)`
 
 ### Font Stack:
-- Lato
+
+Sans-serif:
+- [Lato](https://fonts.google.com/specimen/Lato)
 - Helvetica
-- Sans-serif
+- sans-serif
+
+Serif:
+- [Frank Ruhl Libre](https://fonts.google.com/specimen/Frank+Ruhl+Libre) 
+- Times New Roman
+- serif 
 
 ### Other notes: 
 

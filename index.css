@@ -39,9 +39,10 @@ body {
 
 
 h1{
-    font-size:5rem;
-    font-weight:bold;
+    font-size:7rem;
+    /* font-weight:bold; */
     margin: 0 0 1.5rem 0;
+    font-family: 'Suranna', 'Times New Roman', serif;
 }
 
 h2{
