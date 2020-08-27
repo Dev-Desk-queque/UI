@@ -253,6 +253,21 @@ img {
         margin: 0 0 1rem 0;
 
     }
+
+    .nav-wrapper{
+        padding-bottom:1.2rem;
+    }
+
+    .flex-row {
+        display:flex;
+        flex-flow:column;
+    }
+
+    .hero-img-wrapper {
+        width:80%;
+        margin-bottom: 1.5rem;
+    }
+
     .flex-row p{
         margin:0 0 2rem 0;
     }
@@ -293,10 +308,6 @@ img {
         padding:1rem 0 1.4rem 0;
     }
 
-    .nav-button{
-        padding:1.5rem 0 0 1.5rem;
-    }
-
     .nav-button:nth-child(4){
         margin-bottom:1.5rem;
     }
@@ -334,6 +345,7 @@ img {
     
     .hero-img-wrapper {
         margin:0 0 2rem 0;
+        width:95%;
     }
 
     .flex-text {
