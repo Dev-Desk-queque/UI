@@ -94,7 +94,7 @@ a{
 }
 
 p{
-    line-height:1.2rem;
+    line-height:2.2rem;
     margin:0 0 2.5rem 0;
 }
 
@@ -129,6 +129,7 @@ img {
 .contacts-wrapper {
     display:flex;
     flex-flow:row wrap;
+    justify-items:center;
 }
 .contact-card {
     background-color:palegreen;
@@ -176,8 +177,65 @@ img {
 }
 
 
+@media(max-width:950px){
+    body {
+        /* background-color:palegoldenrod; */
+    }
+
+    nav{
+        display:flex;
+        flex-flow:column;
+        padding-left:5rem;
+    }
+
+    .logo {
+        width:20rem;
+    }
+    .nav-wrapper nav a{
+        font-size:3rem;
+
+    }
+    .red-button {
+        display:inline-block;
+        width:40%;
+    }
+
+
+
+}
+
+
+/*awkward: 962px */
+
+
+/* @media (max-width:750px){
+    body {
+        background-color:pink;
+    }
+
+
+} */
+
 @media (max-width:600px) {
     body {
-        background-color:palegreen;
+        /* background-color:palegreen; */
+    }
+
+    .red-button{
+        min-width:70%;
+    }
+    .content-wrapper {
+        min-width:100%;
+        margin:0;
+        display:flex;
+        flex-flow:column;
+        align-items:center;
+    }
+
+    .contact-card {
+        min-width:100%;
+        background-size:100%;
+        background-size:cover;
     }
 }
+
