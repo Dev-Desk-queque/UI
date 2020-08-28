@@ -46,14 +46,6 @@ nav {
     flex-flow:row;
 }
 
-/* .nav-wrapper .flex-item > * {
-    border:2px solid orange;
-} */
-
-/* .nav-wrapper > * {
-    border: 2px solid blue;
-} */
-
 .nav-wrapper {
     border-bottom: 1px solid #d5d5d5;
     display:flex;
@@ -236,7 +228,6 @@ i {
 .topic {
     padding:0 0 0 3rem;
     margin:0 0 2rem 0;
-    /* width:60% */
     max-width:65rem;
 }
 
@@ -311,9 +302,6 @@ i {
 
 
 @media(max-width:800px){
-    body {
-        /* background-color:palegoldenrod; */
-    }
 
     h1 {
         font-size:5.5rem;
@@ -402,9 +390,6 @@ i {
 
 
 @media (max-width:500px) {
-    body {
-        /* background-color:palegreen; */
-    }
 
     .nav-wrapper {
         padding:1rem 0 1.4rem 0;
@@ -466,6 +451,11 @@ i {
     .contact-card {
         background-size:100%;
         background-size:cover;
+    }
+
+
+    .faq p, h2, h3 {
+        max-width:35rem;
     }
 }
 
