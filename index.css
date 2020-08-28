@@ -1,0 +1,471 @@
+/* =================== */
+/* Reset */
+/* =================== */
+
+* {
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    line-height:1;
+    max-width:100%;
+    font-weight:100;
+    /* border:1px solid gray; */
+}
+
+a {
+    text-decoration:none;
+}
+/* =================== */
+/* General Styles */
+/* =================== */
+
+html {
+    font-size:62.5%;
+}
+
+
+body {
+    font-size:1.9rem;
+    line-height:1.5;
+    background-color:#f8f9fa;
+    color:#343a40;
+    font-family: 'Lato', 'Helvetica', sans-serif;
+}
+
+.nav-wrapper .flex-item{
+    padding:2rem 0;
+    /* border:2px solid fuchsia; */
+
+}
+
+nav {
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    align-items:baseline;
+    flex-flow:row;
+}
+
+.nav-wrapper {
+    border-bottom: 1px solid #d5d5d5;
+    display:flex;
+    flex-flow:row;
+    justify-content:space-between;
+}
+
+.nav-wrapper a {
+    margin-bottom:1rem;
+    /* background-color:plum; */
+}
+
+.logo {
+    border-radius:0;
+    width:18rem;
+    margin-right: 20%;
+}
+
+
+
+.nav-button {
+    font-weight:bold;
+    font-size:1.5rem;
+    color:#343a40;
+    margin:0 1rem;
+    padding:1rem 1rem;
+}
+
+.content-wrapper { 
+    width:80%;
+    margin: 0 auto;
+}
+
+
+
+
+
+h1{
+    font-size:7rem;
+    margin: 4.5rem 0 1.5rem 0;
+    font-family: 'Frank Ruhl Libre', 'Times New Roman', serif;
+    color:black;
+}
+
+h2{
+    font-size:4.5rem;
+    font-family: 'Frank Ruhl Libre', 'Times New Roman', serif;
+    margin: 0 0 1.5rem 0;
+    color:black;
+}
+h3{
+    font-family:'Frank Ruhl Libre', 'Times New Roman', Serif;
+    font-size:2.5rem; 
+}
+a{
+    font-weight:bold;
+    color:black;
+}
+
+p{
+    line-height:2.2rem;
+    margin:0 0 2.5rem 0;
+}
+
+img {
+    border-radius:30px;
+}
+
+.flex-row {
+    display:flex;
+    flex-flow:row-reverse;
+    justify-content:flex-start;
+}
+
+
+
+.flex-text {
+    width:60rem;
+    margin:3rem 7% 0 0;
+}
+.flex-text p {
+    margin:0 0 4rem 0;
+}
+.red-button {
+    border-radius:10px;
+    padding:1rem;
+    background-color:#ec3944;
+    color:white;
+}
+
+.red-underline {
+    background-image: url("img/lambda-underline.png");
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    color:#ec3944;
+}
+/* =================== */
+/* Team */
+/* =================== */
+.contacts-wrapper {
+    display:flex;
+    flex-flow:row wrap;
+    justify-items:center;
+}
+.contact-card {
+    /* background-color:palegreen; */
+    background-size:100%;
+    background-repeat:no-repeat;
+    border:1px solid #d5d5d5;
+    border-radius:25px;
+    height:35rem;
+    width:35rem;
+    margin:1rem;
+    overflow:hidden;
+    display:flex;
+    align-items:flex-end;
+}
+
+
+.contact-card-text{
+    background-color:#f8f9fa;
+    width:100%;
+    padding:2rem 0 0 2rem;
+    
+}
+
+.contact-card p {
+    color:#777;
+}
+
+
+.emily {
+    background-image:url("img/team-Emily-Adams.jpg");
+}
+.devin {
+    background-image:url("img/team-Devin-Bidwell.jpg");
+}
+.brian {
+    background-image:url("img/team-Brian-Griffiths.png");
+}
+.juan {
+    background-image:url("img/team-Juan-Aleman.jpg");
+}
+.suzanne {
+    background-image:url("img/team-Suzanne-Cabral.png");
+}
+
+
+
+/* =================== */
+/* FAQ */
+/* =================== */
+
+/*---------------------------*/
+/* LABEL & HEADER Styles*/
+/*---------------------------*/
+
+i {
+    margin:0 1.7rem 0 0;
+    font-size:3rem;
+}
+.faq p, h2, h3 {
+    max-width:70rem;
+}
+
+.faq h2 {
+    margin:.5rem 0;
+}
+
+.faq h2>label {
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.faq h3>label {
+    margin:.2rem 0;
+    border-bottom:1px solid #d5d5d5;
+}
+
+.topic {
+    padding:0 0 0 3rem;
+    margin:0 0 2rem 0;
+    max-width:65rem;
+}
+
+.topic p {
+    padding:1rem 0 0 1.4rem;
+}
+
+
+/* ---- Clickable Labels ---- */
+
+.faq h2>label, h3>label {
+    padding:1rem;
+    width:80rem;
+    display:block;
+    cursor: pointer;
+}
+
+
+/* ---- Hide Checkboxes ---- */
+
+.faq input[type="checkbox"] {
+    position:absolute;
+    left:-100vw;
+}
+
+/*---------------------------*/
+/* TOPIC UNFOLDER */
+/*---------------------------*/
+
+/* ---- Default: Closed ---- */
+
+.faq .topic{
+    overflow-y:hidden;
+    height:0;
+}
+
+
+/* ---- On check: Opened ---- */
+
+.faq > input[type="checkbox"]:checked + .topic {
+    height:auto;
+    overflow:visible;
+}
+
+/*---------------------------*/
+/* ANSWER UNFOLDER */
+/*---------------------------*/
+
+
+/*---- Default: Closed ---- */
+
+.faq .question{
+    overflow-y:hidden;
+    height:0;
+}
+
+
+/* ---- On check: Opened ---- */
+
+.faq .topic > input[type="checkbox"]:checked + .question {
+    height:auto;
+    overflow:visible;
+}
+
+
+
+
+
+/* =================== */
+/* Breakpoints */
+/* =================== */
+
+
+@media(max-width:800px){
+
+    h1 {
+        font-size:5.5rem;
+        margin:3rem 0 .5rem 0;
+    }
+
+    h2 {
+        font-size:3.6rem;
+    }
+    p {
+        font-size:1.8rem;
+        max-width:35rem;
+    }
+
+    nav{
+        display:flex;
+        flex-flow:column;
+        align-items:flex-start;
+        padding:0 0 0 1.5rem;
+        width:40rem;
+    }
+
+    .nav-wrapper .flex-item {
+        display:flex;
+        flex-flow:column;
+        align-items:flex-start;
+        padding:0 0 0 1.5rem;
+        width:40rem;
+    }
+
+    .logo {
+        width:17rem;
+        margin:1.5rem 0 0 0;
+        padding:0;
+    }
+    .nav-wrapper .flex-item a{
+        font-size:1.6rem;
+        padding:.7rem 1.5rem;
+        margin: 0 0 1rem 0;
+
+    }
+
+    .nav-wrapper{
+        padding-bottom:1.2rem;
+    }
+
+    .flex-row {
+        display:flex;
+        flex-flow:column;
+    }
+
+    .hero-img-wrapper {
+        width:80%;
+        margin-bottom: 1.5rem;
+    }
+
+    .flex-row p{
+        margin:0 0 2rem 0;
+    }
+    .content-wrapper {
+        width:88%;
+    }
+
+    .contact-card {
+        width:30rem;
+        background-size:100%;
+        background-size:cover;
+    }
+
+    .red-button {
+        display:inline-block;
+        width:40%;
+    }
+
+
+    .flex-text {
+        margin:0 2.2rem 0 0;
+    }
+    .red-button {
+        min-width:15rem;
+    }
+
+
+}
+
+
+
+@media (max-width:500px) {
+
+    .nav-wrapper {
+        padding:1rem 0 1.4rem 0;
+    }
+
+    .nav-button:nth-child(4){
+        margin-bottom:1.5rem;
+    }
+
+    .red-button{
+        min-width:70%;
+        padding:1.5rem;
+    }
+
+
+    .logo {
+        padding:0;
+
+    }
+
+    nav {
+        padding:0 0 0 2rem;
+    }
+
+    
+
+    h1 {
+        font-size:4.8rem;
+        margin:2rem 0 .2rem 0;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+
+    .flex-row {
+        display:flex;
+        flex-flow:column;
+        margin:0 0 5rem 0;
+    }
+    
+    .hero-img-wrapper {
+        margin:0 0 2rem 0;
+        width:95%;
+    }
+
+    .flex-text {
+        margin:0;
+    }
+
+
+    .content-wrapper {
+        min-width:85%;
+        margin:auto;
+        display:flex;
+        flex-flow:column;
+        align-items:center;
+    }
+
+    .contact-card {
+        background-size:100%;
+        background-size:cover;
+    }
+
+
+    .faq p, h2, h3 {
+        max-width:35rem;
+    }
+}
+
+@media (max-width:320px) {
+
+    
+    .faq h2, h3 {
+        max-width:25rem;
+    }
+    .faq p {
+        max-width:21rem;
+    }
+}
