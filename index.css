@@ -459,3 +459,13 @@ i {
     }
 }
 
+@media (max-width:320px) {
+
+    
+    .faq h2, h3 {
+        max-width:25rem;
+    }
+    .faq p {
+        max-width:21rem;
+    }
+}
