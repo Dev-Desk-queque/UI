@@ -46,14 +46,6 @@ nav {
     flex-flow:row;
 }
 
-/* .nav-wrapper .flex-item > * {
-    border:2px solid orange;
-} */
-
-/* .nav-wrapper > * {
-    border: 2px solid blue;
-} */
-
 .nav-wrapper {
     border-bottom: 1px solid #d5d5d5;
     display:flex;
@@ -208,9 +200,100 @@ img {
 /* FAQ */
 /* =================== */
 
-.content-wrapper p {
-    max-width:75rem;
+/*---------------------------*/
+/* LABEL & HEADER Styles*/
+/*---------------------------*/
+
+i {
+    margin:0 1.7rem 0 0;
+    font-size:3rem;
 }
+.faq p, h2, h3 {
+    max-width:70rem;
+}
+
+.faq h2 {
+    margin:.5rem 0;
+}
+
+.faq h2>label {
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.faq h3>label {
+    margin:.2rem 0;
+    border-bottom:1px solid #d5d5d5;
+}
+
+.topic {
+    padding:0 0 0 3rem;
+    margin:0 0 2rem 0;
+    max-width:65rem;
+}
+
+.topic p {
+    padding:1rem 0 0 1.4rem;
+}
+
+
+/* ---- Clickable Labels ---- */
+
+.faq h2>label, h3>label {
+    padding:1rem;
+    width:80rem;
+    display:block;
+    cursor: pointer;
+}
+
+
+/* ---- Hide Checkboxes ---- */
+
+.faq input[type="checkbox"] {
+    position:absolute;
+    left:-100vw;
+}
+
+/*---------------------------*/
+/* TOPIC UNFOLDER */
+/*---------------------------*/
+
+/* ---- Default: Closed ---- */
+
+.faq .topic{
+    overflow-y:hidden;
+    height:0;
+}
+
+
+/* ---- On check: Opened ---- */
+
+.faq > input[type="checkbox"]:checked + .topic {
+    height:auto;
+    overflow:visible;
+}
+
+/*---------------------------*/
+/* ANSWER UNFOLDER */
+/*---------------------------*/
+
+
+/*---- Default: Closed ---- */
+
+.faq .question{
+    overflow-y:hidden;
+    height:0;
+}
+
+
+/* ---- On check: Opened ---- */
+
+.faq .topic > input[type="checkbox"]:checked + .question {
+    height:auto;
+    overflow:visible;
+}
+
+
+
 
 
 /* =================== */
@@ -219,9 +302,6 @@ img {
 
 
 @media(max-width:800px){
-    body {
-        /* background-color:palegoldenrod; */
-    }
 
     h1 {
         font-size:5.5rem;
@@ -310,9 +390,6 @@ img {
 
 
 @media (max-width:500px) {
-    body {
-        /* background-color:palegreen; */
-    }
 
     .nav-wrapper {
         padding:1rem 0 1.4rem 0;
@@ -375,5 +452,20 @@ img {
         background-size:100%;
         background-size:cover;
     }
+
+
+    .faq p, h2, h3 {
+        max-width:35rem;
+    }
 }
 
+@media (max-width:320px) {
+
+    
+    .faq h2, h3 {
+        max-width:25rem;
+    }
+    .faq p {
+        max-width:21rem;
+    }
+}
